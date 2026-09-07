@@ -1,3 +1,6 @@
+
+![1990s Movies per Year](images/movies_per_year.png)
+
 # Crime Analysis in Los Angeles (2020–2023): A Data Analytics Case Study
 
 
