@@ -1,5 +1,6 @@
 
-![1990s Movies per Year](images/movies_per_year.png)
+<img width="500" height="281" alt="la_skyline" src="https://github.com/user-attachments/assets/6d8217d0-e239-4741-8db4-e429c250a785" />
+
 
 # Crime Analysis in Los Angeles (2020–2023): A Data Analytics Case Study
 
