@@ -252,9 +252,8 @@ Potential extensions of this analysis include:
 ## Notebook
 
 The final polished notebook is available here:
-
-- [`analyzing_crime_los_angeles_final.ipynb`](sandbox:/mnt/data/analyzing_crime_los_angeles_final.ipynb)
-
+- [`analyzing_crime_los_angeles_case_study.ipynb`](analyzing_crime_los_angeles_case_study.ipynb)
+  
 ## What This Project Demonstrates
 
 This project showcases the ability to take a structured dataset and transform it into actionable insights through a complete analytical workflow.
