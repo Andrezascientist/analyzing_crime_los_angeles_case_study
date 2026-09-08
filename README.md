@@ -45,7 +45,7 @@ The analysis focuses on:
 
 ## Dataset
 
-- **File:** `data/crimes.csv`
+- **File:** `data.zip` (compressed dataset containing `crimes.csv`)
 - **Source:** DataCamp (educational version adapted from Los Angeles Open Data)
 - **Unit of analysis:** Each row represents a single reported crime incident. This means that all analyses are conducted at the incident level rather than at the individual or location level.
 
