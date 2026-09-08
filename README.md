@@ -219,7 +219,7 @@ This project is designed to demonstrate the practical skills expected in analyti
 3. Install the required libraries:
 
 ```bash
-pip install pandas numpy matplotlib seaborn notebook
+ pip install -r requirements.txt
 ```
 
 4. Open Jupyter Notebook:
