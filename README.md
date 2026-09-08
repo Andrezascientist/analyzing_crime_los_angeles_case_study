@@ -216,23 +216,21 @@ This project is designed to demonstrate the practical skills expected in analyti
 ## How to Run the Notebook
 
 1. Clone or download this repository.
-2. Make sure the dataset file is placed at `data/crimes.csv` or update the notebook path if needed.
-3. Install the required libraries:
+2. Extract `data.zip` to access `crimes.csv`.
+3. Make sure the dataset path in the notebook points to the location of the extracted `crimes.csv` file
+4. Install the required Python packages using `requirements.txt`.
 
 ```bash
  pip install -r requirements.txt
 ```
 
-4. Open Jupyter Notebook:
+5. Open and run `analyzing_crime_los_angeles_case_study.ipynb` in Jupyter Notebook.
 
 ```bash
 jupyter notebook
 ```
-
-5. Run `analyzing_crime_los_angeles_final.ipynb` from top to bottom.
-
 6. See answers under sections Q1–Q10, with insights and recommendations.
-
+  
 ## Recommendations / Next Steps
 
 Potential extensions of this analysis include:
