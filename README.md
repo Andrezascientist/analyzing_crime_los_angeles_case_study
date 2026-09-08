@@ -206,10 +206,11 @@ This project is designed to demonstrate the practical skills expected in analyti
 
 ```text
 .
-├── analyzing_crime_los_angeles_final.ipynb   # final notebook
-├── README.md                                 # project overview
-└── data/
-    └── crimes.csv                            # dataset
+├── analyzing_crime_los_angeles_case_study.ipynb   # analysis notebook
+├── data.zip                                        # compressed dataset (contains crimes.csv)
+├── index.html                                      # rendered project
+├── README.md                                       # project overview
+└── requirements.txt                                # Python dependencies
 ```
 
 ## How to Run the Notebook
