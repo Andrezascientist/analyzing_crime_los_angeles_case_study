@@ -217,7 +217,7 @@ This project is designed to demonstrate the practical skills expected in analyti
 
 1. Clone or download this repository.
 2. Extract `data.zip` to access `crimes.csv`.
-3. Make sure the dataset path in the notebook points to the location of the extracted `crimes.csv` file
+3. Place the extracted `crimes.csv` file in the same directory as `analyzing_crime_los_angeles_case_study.ipynb`.
 4. Install the required Python packages using `requirements.txt`.
 
 ```bash
@@ -229,7 +229,7 @@ This project is designed to demonstrate the practical skills expected in analyti
 ```bash
 jupyter notebook
 ```
-6. See answers under sections Q1–Q10, with insights and recommendations.
+6. View answers under sections Q1–Q10, with insights and recommendations.
   
 ## Recommendations / Next Steps
 
