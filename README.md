@@ -267,18 +267,15 @@ Potential extensions of this analysis include:
 
 ## What This Project Demonstrates
 
-This project showcases the ability to take a structured dataset and transform it into actionable insights through a complete analytical workflow.
+This case study demonstrates an end-to-end exploratory data analysis workflow, including:
 
-It highlights:
+- cleaning and preprocessing real-world-style data with pandas
+- engineering temporal and categorical features 
+- translating analytical questions into structured analyses  
+- aggregating and comparing data across multiple dimensions  
+- validating selected findings using alternative analytical approaches  
+- creating visualizations to communicate patterns  
+- distinguishing descriptive findings from interpretations and limitations
+- communicating analytical results clearly for a non-technical audience
 
-- end-to-end exploratory data analysis  
-- data cleaning and preprocessing using pandas  
-- feature engineering from raw temporal and categorical data  
-- structured problem-solving using real-world analytical questions  
-- clear and professional communication of insights  
-- validation of results using multiple approaches  
-- ability to extend a guided exercise into an original, portfolio-ready case study
-
-## Key Value
-
-This project demonstrates how raw incident-level data can be transformed into meaningful insights that support data-driven decision-making in real-world scenarios.
+The complete analysis is available in the analyzing_crime_los_angeles_case_study.ipynb
