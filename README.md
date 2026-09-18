@@ -197,16 +197,6 @@ Violent offenses such as assault with a deadly weapon and attempted homicide sho
 
 ---
 
-### Analytical Skills Demonstrated
-
-- translating questions into structured analysis
-- identifying trends across multiple dimensions
-- connecting patterns to operational decision-making
-- communicating findings clearly and cautiously
-- distinguishing descriptive findings from interpretation and limitations
-  
----
-
 ## Repository Structure
 
 ```text
