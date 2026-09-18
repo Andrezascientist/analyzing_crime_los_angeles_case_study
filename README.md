@@ -245,10 +245,14 @@ The notebook contains the complete analysis, visualizations, answers to question
 
  ## Limitations
 
-- This is an **educational version** of the original dataset.
-- The analysis is based on **reported incidents**, which may not fully reflect actual crime occurrence.
-- Some demographic comparisons may be affected by **population distribution** and **reporting behavior**.
+Several limitations should be considered when interpreting the results:
+
+- The project uses an educational version of the original dataset.
+- The analysis is based on **reported incidents**, which may not fully represent all crime that occurred.
+- Crime counts are not adjusted for differences in population across geographic or demographic groups.
+- Some demographic comparisons may be influenced by population distribution and reporting behavior.
 - Variables such as `weapon_desc`, `vict_sex`, and `vict_descent` required data quality handling and should be interpreted carefully.
+- The analysis identifies associations and descriptive patterns; it does not establish causal relationships.
 
 ---
 
@@ -256,12 +260,12 @@ The notebook contains the complete analysis, visualizations, answers to question
 
 Potential extensions of this analysis include:
 
-- monthly or seasonal trend analysis
-- hotspot analysis by area over time
-- deeper crime-type segmentation by age, gender, or descent
-- weapon involvement by area and time of day
-- interactive dashboard development for monitoring crime trends
-- predictive modeling for high-risk periods or locations
+- analyzing monthly and seasonal crime trends
+- comparing average daily crime frequency between weekdays and weekends
+- examining geographic hotspots over time
+- performing deeper segmentation by crime type, age, gender, and descent
+- analyzing weapon involvement by area and time of day
+- exploring predictive modeling for high-frequency periods or locations
 
 ---
 
