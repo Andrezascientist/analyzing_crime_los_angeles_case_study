@@ -11,27 +11,28 @@
 
 **Notebook:** [`analyzing_crime_los_angeles_case_study.ipynb`](analyzing_crime_los_angeles_case_study.ipynb)
   
+---
 
 ## Overview
 
-This project analyzes reported crime incidents in Los Angeles between **January 1, 2020** and **July 3, 2023** using Python, pandas, and Seaborn. The goal is to identify actionable patterns in crime activity across **time**, **location**, **victim demographics**, and **weapon involvement**.
+This project analyzes reported crime incidents in Los Angeles between **January 1, 2020** and **July 3, 2023**. Using Python and pandas, the analysis explores patterns across **time**, **location**, **victim demographics**, and **weapon involvement**.
 
-The notebook was originally developed from an educational DataCamp exercise and expanded into a full case study to demonstrate practical **data cleaning**, **feature engineering**, **exploratory data analysis**, **visualization**, and **insight generation** skills relevant to **Data Analyst** and **Data Scientist** roles.
+The notebook was originally developed from an educational DataCamp exercise and expanded into a complete data analytics case study. The project demonstrates **data cleaning**, **feature engineering**, **exploratory data analysis**, **visualization**, and **validation** and **communication of analytical findings.**
 
+---
 
 ## Business Context
 
-Los Angeles is a large and diverse city with varying crime patterns across neighborhoods and time periods. Understanding when, where, and how crimes occur can help support more effective public safety strategies and resource allocation.
+Understanding when, where, and how reported crimes occur can help public safety organizations identify patterns and better allocate analytical and operational resources.
 
-In this case study, the analysis is framed as a realistic public safety scenario, where insights could support organizations such as the Los Angeles Police Department (LAPD) or city planners.
-
-The objective is to identify patterns that may inform decisions such as:
+This case study examines crime data from the perspective of a public safety analyst. The analysis focuses on questions such as:
 
 - prioritizing high-risk time windows
 - identifying consistently elevated geographic areas
 - understanding which victim groups are most affected
 - distinguishing high-volume crimes from high-risk violent offenses
 
+---
 
 ## Objectives
 
@@ -41,25 +42,34 @@ The analysis focuses on:
 - analyzing areas with the highest crime frequency
 - examining temporal patterns (hour, weekday vs. weekend)
 - exploring victim demographics
-- assessing weapon involvement
+- assessing weapon involvement across crime categories
+
+---
 
 ## Dataset
 
 - **File:** `data.zip` (compressed dataset containing `crimes.csv`)
-- **Source:** DataCamp (educational version adapted from Los Angeles Open Data)
-- **Unit of analysis:** Each row represents a single reported crime incident. This means that all analyses are conducted at the incident level rather than at the individual or location level.
+- **Source:** DataCamp educational dataset adapted from Los Angeles Open Data
+- **Period:** January 1, 2020 – July 3, 2023
+- **Unit of analysis:** Each row represents a reported crime incident.
+
+---
 
 ### Key Variables
+
 The dataset includes:
 
-- crime date and time (`date_rptd`, `date_occ`, `time_occ`)
-- location information (`area_name`, `location`)
-- crime type (`crm_cd_desc`)
-- victim demographics (`vict_age`, `vict_sex`, `vict_descent`)
-- weapon and report information (`weapon_desc`, `status_desc`)
+- **Crime date and time:** `date_rptd`, `date_occ`, `time_occ`
+- **Location:** `area_name`, `location`
+- **Crime type:** `crm_cd_desc`
+- **Victim demographics:** `vict_age`, `vict_sex`, `vict_descent`
+- **Weapon and report information:** `weapon_desc`, `status_desc`
+
+---
 
 ### Engineered Features
-To support deeper analysis, the notebook creates additional variables such as:
+
+Additional variables were created to support the analysis:
 
 - `year`
 - `month`
@@ -71,6 +81,8 @@ To support deeper analysis, the notebook creates additional variables such as:
 - `age_group`
 - `weapon_used`
 - `day_type`
+
+---
 
 ## Key Questions Answered
 
@@ -85,83 +97,89 @@ To support deeper analysis, the notebook creates additional variables such as:
 9. How does crime distribution vary by victim descent and gender?
 10. How does weapon involvement vary across crime types?
 
-## Methods & Tools
-
-### Tools
-- **Python**
-- **pandas**
-- **NumPy**
-- **Matplotlib**
-- **Seaborn**
-- **Jupyter Notebook**
+---
 
 ### Analytical Methods
+
+The analysis uses several exploratory and descriptive techniques:
 
 - data cleaning and standardization
 - missing value detection and placeholder handling
 - datetime conversion and time-based feature engineering
-- categorical aggregation using `value_counts()`, `groupby()`, and `pivot`
-- proportion analysis using `normalize=True`
-- cross-tab and heatmap analysis
-- validation through alternative methods in appendices
+- categorical aggregation using `value_counts()`, `groupby()`, and pivot tables
+- proportion analysis using normalized counts
+- cross-tabulation and heatmap analysis
+- validation of selected results using alternative analytical approaches
+
+---
 
 ## Data Cleaning & Preparation Highlights
 
-This project includes several cleaning and preprocessing steps designed to make the analysis robust and reproducible:
+Several preprocessing steps were performed before the analysis:
 
-- Standardized column names to **lowercase snake_case**
-- Preserved leading zeros in `TIME OCC` by reading it as string before conversion
-- Converted date/time columns into usable datetime formats
-- Created derived temporal features (`hour`, `day_of_week`, etc.)
-- Grouped victim ages into interpretable age bands using `pd.cut()`
-- Created a binary `weapon_used` indicator from `weapon_desc`
-- Identified and replaced placeholder values such as `"?"`, `"N/A"`, and `"unknown"` with `NaN`
-- Reviewed ambiguous categories (for example, low-frequency `"H"` in `vict_sex`) and excluded them where appropriate for clearer interpretation
+- standardized column names to lowercase `snake_case`
+- preserved leading zeros in `time_occ` before time conversion
+- Converted date and time variables into usable datetime formats
+- created temporal features such as hour and day of week
+- grouped victim ages into interpretable age categories using `pd.cut()`
+- created a binary `weapon_used` indicator from `weapon_desc`
+- identified and replaced placeholder values such as `"?"`, `"N/A"`, and `"unknown"` with missing values(NaN)
+- reviewed ambiguous and low-frequency categories and excluded them where appropriate for clearer interpretation
+
+These steps helped improve consistency and support reproducible analysis throughout the notebook.
+
+---
 
 ## Key Findings
 
-### 1) Crime peaks at midday
+### 1) Reported Crime frequency peaks at midday
 
-The highest crime frequency occurs at **12 PM**, suggesting that incidents rise with daytime activity and remain elevated through the afternoon.
+The highest frequency of reported crimes occurs at **12 PM**, with incident counts remaining elevated through parts of the afternoon.
 
-### 2) Central is the most consistently high-risk area
+### 2) Central records the highest concentration of reported crimes
 
-The **Central** area has the highest frequency of **night crimes** and also records the highest number of crimes during **peak crime hours**, indicating a persistent concentration of crime risk.
+The **Central** area has the highest overall crime frequency and also records the highest number of incidents during the identified peak crime period.
 
-### 3) Working-age adults are the most affected
+### 3) Adults aged 26–34 represent the largest victim age group
 
-Victims aged **26–34** represent the largest share of incidents, followed by the **35–44** group. The **0–17** group has the lowest number of crimes.
+Victims aged **26–34** account for the largest share of reported incidents, followed by the **35–44** age group. The **0–17** group has the lowest number of reported incidents.
 
-### 4) A few crime categories dominate the dataset
+### 4) A small number of crime categories account for many incidents
 
-**Identity theft**, **battery**, **burglary**, **assault with a deadly weapon**, and **intimate partner-related offenses account** for a substantial share of reported incidents. 
+The most frequently reported categories include:
+
+- identity theft
+- battery
+- burglary
+- assault with a deadly weapon
+- intimate partner-related offenses
 
 This concentration suggests that a small number of crime categories drive a large portion of total incidents, indicating that targeted interventions in these areas could have a disproportionate impact on reducing overall crime.
 
-### 5) Crime distribution by gender is broadly balanced
-Male victims account for about **50%** of incidents and female victims about **48%**, indicating that crime in this dataset does not disproportionately affect one gender.
+### 5) Male and female victims are represented at similar levels
+
+Among records with available gender information, male victims account for approximately **50%** of incidents and female victims approximately **48%**,indicating that crime in this dataset does not disproportionately affect one gender.
 
 ### 6) Peak-hour crime concentration is highest in Central
 
-The **Central** area records the highest number of crimes during peak crime hours, reinforcing its position as a consistently high-crime location.
+The **Central** area records the highest number of reported crimes during peak crime hours. Other areas, including **77th Street** and **Pacific**, also show relatively high incident counts during these periods.
 
-Other areas such as **77th Street** and **Pacific** also show elevated crime levels during peak hours, indicating that crime hotspots remain relatively stable throughout the day.
+This suggests that peak periods largely reinforce existing geographic concentrations rather than producing a substantially different spatial pattern.
 
-This suggests that peak crime periods amplify existing geographic patterns rather than shifting them, highlighting the need for targeted resource allocation in consistently high-risk areas.
+### 7) Total reported crime volume is higher on weekdays than weekends
 
-### 7) Weekdays show substantially higher crime volume than weekends
+Approximately **71.4%** of reported incidents occur on weekdays and **28.6%** on weekends. Among weekdays, **Friday** has the highest crime frequency.
 
-Approximately **71.4%** of crimes occur on weekdays, compared with about **28.6%** on weekends. Among weekdays, **Friday** has the highest crime frequency.
+Because there are five weekdays and two weekend days, total counts alone should not be interpreted as evidence that an individual weekday is necessarily riskier than an individual weekend day. Daily patterns are examined separately in the analysis.
 
-### 8) Crime activity increases toward the end of the workweek
+### 8) Friday has the highest crime frequency among weekdays
 
 Among weekdays, **Friday** has the highest crime frequency, followed closely by **Thursday** and **Wednesday**, indicating a gradual increase in crime activity as the week progresses.
 
-This pattern suggests that crime may be influenced by end-of-week behavioral and social dynamics, such as increased mobility and economic activity.
+The differences across weekdays are relatively modest, indicating that reported crime is distributed throughout the workweek rather than being concentrated on a single day.
 
-The relatively small differences across weekdays indicate that crime is consistently present throughout the week, but slightly intensifies toward the end of the workweek.
 
-### 9) Multi-dimensional demographic disparities across victim descent and gender
+### 9) Crime distribution varies across victim descent and gender
 
 Crime distribution varies across victim descent and gender, with certain demographic groups experiencing higher concentrations of incidents.
 
@@ -171,28 +189,13 @@ Analyzing these variables jointly reveals interaction patterns that would not be
 
 These differences should be interpreted cautiously, as they may reflect underlying population distribution, reporting practices, or socioeconomic factors rather than direct causal relationships.
 
-### 10) Weapon involvement is strongly associated with crime severity
+### 10) Weapon involvement varies substantially across crime types
 
-Most crimes in the dataset do **not** involve a weapon, indicating that a large portion of incidents are non-violent or involve lower levels of physical threat.
+Most reported incidents in the dataset do not involve a recorded weapon. However, weapon involvement differs considerably by crime category.
 
-However, weapon involvement varies significantly by crime type. Violent offenses—such as assault with a deadly weapon and attempted homicide—show very high rates of weapon usage, while non-violent crimes such as identity theft, fraud, and document-related offenses show little to none.
+Violent offenses such as assault with a deadly weapon and attempted homicide show relatively high levels of weapon involvement, while categories such as identity theft, fraud, and document-related offenses show little or none.
 
-This clear distinction highlights that weapon involvement is strongly linked to crime severity and can serve as an important indicator for differentiating between high-risk and lower-risk offenses.
-
-
-## Why This Project Matters for Recruiters
-
-This project is designed to demonstrate the practical skills expected in analytics roles:
-
-### Technical Skills Demonstrated
-
-- cleaning messy real-world style data
-- working with missing values and ambiguous categories
-- feature engineering from date/time data
-- exploratory analysis with pandas
-- grouping, pivoting, and summarizing categorical data
-- building clear visualizations for decision support
-- validating results through alternative methods
+---
 
 ### Analytical Skills Demonstrated
 
@@ -201,17 +204,20 @@ This project is designed to demonstrate the practical skills expected in analyti
 - connecting patterns to operational decision-making
 - communicating findings clearly and cautiously
 - distinguishing descriptive findings from interpretation and limitations
+  
+---
 
 ## Repository Structure
 
 ```text
-.
+analyzing_crime_los_angeles_case_study/
 ├── analyzing_crime_los_angeles_case_study.ipynb   # analysis notebook
 ├── data.zip                                        # compressed dataset (contains crimes.csv)
 ├── index.html                                      # rendered project
 ├── README.md                                       # project overview
 └── requirements.txt                                # Python dependencies
 ```
+---
 
 ## How to Run the Notebook
 
@@ -224,13 +230,28 @@ This project is designed to demonstrate the practical skills expected in analyti
  pip install -r requirements.txt
 ```
 
-5. Open and run `analyzing_crime_los_angeles_case_study.ipynb` in Jupyter Notebook.
-
+5. Start Jupyter Notebook:
+   
 ```bash
-jupyter notebook
+ jupyter notebook
 ```
-6. View answers under sections Q1–Q10, with insights and recommendations.
-  
+   
+7. Open and run
+analyzing_crime_los_angeles_case_study.ipynb
+
+The notebook contains the complete analysis, visualizations, answers to questions Q1–Q10, and supporting interpretations.
+
+---
+
+ ## Limitations
+
+- This is an **educational version** of the original dataset.
+- The analysis is based on **reported incidents**, which may not fully reflect actual crime occurrence.
+- Some demographic comparisons may be affected by **population distribution** and **reporting behavior**.
+- Variables such as `weapon_desc`, `vict_sex`, and `vict_descent` required data quality handling and should be interpreted carefully.
+
+---
+
 ## Recommendations / Next Steps
 
 Potential extensions of this analysis include:
@@ -242,12 +263,6 @@ Potential extensions of this analysis include:
 - interactive dashboard development for monitoring crime trends
 - predictive modeling for high-risk periods or locations
 
-## Limitations
-
-- This is an **educational version** of the original dataset.
-- The analysis is based on **reported incidents**, which may not fully reflect actual crime occurrence.
-- Some demographic comparisons may be affected by **population distribution** and **reporting behavior**.
-- Variables such as `weapon_desc`, `vict_sex`, and `vict_descent` required data quality handling and should be interpreted carefully.
 
 ## Notebook
 
