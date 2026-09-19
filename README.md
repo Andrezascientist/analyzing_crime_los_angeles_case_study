@@ -167,7 +167,7 @@ These categories account for a substantial share of reported incidents in the da
 
 Among records with available gender information, male victims account for approximately **50%** of incidents and female victims approximately **48%**. 
 
-This indicates a relatively balanced distribution of reported incidents between male and female victims in the analyzed dataset.
+This indicates a relatively balanced distribution of reported crimes between male and female victims in the analyzed dataset.
 
 ![Crime Distribution by Victim Gender](image/crime_distribution_by_victim_gender.png)
 
