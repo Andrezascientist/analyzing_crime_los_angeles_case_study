@@ -137,7 +137,7 @@ The highest frequency of reported crimes occurs at **12 PM**, with incident coun
 
 ![Crime Frequency by Hour](image/crime_frequency_by_hour.png)
 
-### 2) Central records the highest concentration of reported crimes
+### 2) Central records the highest number of reported nighttime crimes
 
 The **Central** area records the highest number of reported crimes during nighttime hours.
 
