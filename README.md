@@ -141,6 +141,8 @@ The highest frequency of reported crimes occurs at **12 PM**, with incident coun
 
 The **Central** area records the highest number of reported crimes during nighttime hours.
 
+![Night Crimes by Area](image/night_crimes_by_area.png)
+
 ### 3) Adults aged 26–34 represent the largest victim age group
 
 Victims aged **26–34** account for the largest share of reported incidents, followed by the **35–44** age group. The **0–17** group has the lowest number of reported incidents.
