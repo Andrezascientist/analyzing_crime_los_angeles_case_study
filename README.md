@@ -187,6 +187,8 @@ Among weekdays, Friday records the highest number of reported incidents, followe
 
 The differences across weekdays are relatively modest, indicating that reported crime is distributed throughout the workweek rather than being concentrated on a single day
 
+![Crime Frequency by Day of Week](image/crime_frequency_by_day_of_week.png)
+
 ### 9) Crime distribution varies across victim descent and gender
 
 Crime distribution varies across victim descent and gender, with certain demographic groups experiencing higher concentrations of incidents.
