@@ -169,6 +169,8 @@ Among records with available gender information, male victims account for approx
 
 This indicates a relatively balanced distribution of reported incidents between male and female victims in the analyzed dataset.
 
+![Crime Distribution by Victim Gender](image/crime_distribution_by_victim_gender.png)
+
 ### 6) Peak-hour crime concentration is highest in Central
 
 The **Central** area records the highest number of reported crimes during peak crime hours. Other areas, including **77th Street** and **Pacific**, also show relatively high incident counts during these periods.
