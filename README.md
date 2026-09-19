@@ -147,6 +147,8 @@ The **Central** area records the highest number of reported crimes during nightt
 
 Victims aged **26–34** account for the largest share of reported incidents, followed by the **35–44** age group. The **0–17** group has the lowest number of reported incidents.
 
+![Crime Distribution by Victim Age Group](image/crime_distribution_by_age_group.png)
+
 ### 4) A small number of crime categories account for many incidents
 
 The most frequently reported categories include:
