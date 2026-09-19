@@ -270,4 +270,6 @@ This case study demonstrates an end-to-end exploratory data analysis workflow, i
 - distinguishing descriptive findings from interpretations and limitations
 - communicating analytical results clearly for a non-technical audience
 
-The complete analysis is available in the https://andrezascientist.github.io/analyzing_crime_los_angeles_case_study/
+---
+**View the complete analysis:** [Los Angeles Crime Analysis – HTML Report](https://andrezascientist.github.io/analyzing_crime_los_angeles_case_study/)
+
