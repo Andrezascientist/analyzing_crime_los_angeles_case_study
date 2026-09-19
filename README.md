@@ -138,7 +138,7 @@ The highest frequency of reported crimes occurs at **12 PM**, with incident coun
 
 ### 2) Central records the highest concentration of reported crimes
 
-The **Central** area has the highest overall crime frequency and also records the highest number of incidents during the identified peak crime period.
+The **Central** area records the highest number of reported crimes during nighttime hours.
 
 ### 3) Adults aged 26–34 represent the largest victim age group
 
@@ -154,17 +154,17 @@ The most frequently reported categories include:
 - assault with a deadly weapon
 - intimate partner-related offenses
 
-This concentration suggests that a small number of crime categories drive a large portion of total incidents, indicating that targeted interventions in these areas could have a disproportionate impact on reducing overall crime.
+These categories account for a substantial share of reported incidents in the dataset, highlighting the concentration of crime frequency across a relatively small number of categories.
 
 ### 5) Male and female victims are represented at similar levels
 
-Among records with available gender information, male victims account for approximately **50%** of incidents and female victims approximately **48%**,indicating that crime in this dataset does not disproportionately affect one gender.
+Among records with available gender information, male victims account for approximately **50%** of incidents and female victims approximately **48%**. 
+
+This indicates a relatively balanced distribution of reported incidents between male and female victims in the analyzed dataset.
 
 ### 6) Peak-hour crime concentration is highest in Central
 
 The **Central** area records the highest number of reported crimes during peak crime hours. Other areas, including **77th Street** and **Pacific**, also show relatively high incident counts during these periods.
-
-This suggests that peak periods largely reinforce existing geographic concentrations rather than producing a substantially different spatial pattern.
 
 ### 7) Total reported crime volume is higher on weekdays than weekends
 
@@ -174,10 +174,9 @@ Because there are five weekdays and two weekend days, total counts alone should 
 
 ### 8) Friday has the highest crime frequency among weekdays
 
-Among weekdays, **Friday** has the highest crime frequency, followed closely by **Thursday** and **Wednesday**, indicating a gradual increase in crime activity as the week progresses.
+Among weekdays, Friday records the highest number of reported incidents, followed by Thursday and Wednesday.
 
-The differences across weekdays are relatively modest, indicating that reported crime is distributed throughout the workweek rather than being concentrated on a single day.
-
+The differences across weekdays are relatively modest, indicating that reported crime is distributed throughout the workweek rather than being concentrated on a single day
 
 ### 9) Crime distribution varies across victim descent and gender
 
