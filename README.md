@@ -161,6 +161,8 @@ The most frequently reported categories include:
 
 These categories account for a substantial share of reported incidents in the dataset, highlighting the concentration of crime frequency across a relatively small number of categories.
 
+![Top 5 Most Common Crime Types](image/top_5_most_common_crime_types.png)
+
 ### 5) Male and female victims are represented at similar levels
 
 Among records with available gender information, male victims account for approximately **50%** of incidents and female victims approximately **48%**. 
